@@ -1090,3 +1090,13 @@ body{
     color: #535353;
     font-family: "PT Sans", sans-serif;
 }
+
+/* message->php */
+.message {
+    text-align: center;
+    background: #f9eded;
+    padding: 15px 0;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    color: red;
+}
