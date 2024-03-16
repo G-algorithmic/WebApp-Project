@@ -8,3 +8,4 @@ const navigationHeight =
 
     document.documentElement.style.setProperty("--scroll-padding",navigationHeight + "px");
 
+    

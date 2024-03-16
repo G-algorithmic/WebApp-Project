@@ -25,6 +25,25 @@ integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4
 </head>
 
 <body>
+    <style>
+        #submit {
+        border: 1px solid white;
+        padding: 10px;
+        margin-top: 10px;
+        width: 110%;
+        text-align: center;
+        color: white;
+        background: #2c97f500;
+    
+    }
+        #submit:hover {
+        background-color: #2c97f5;
+        border-color: #2c97f5;
+        transition: 0.2s ease-in-out;
+    }
+        </style>
+
+
     
     <!-- navigation -->
     <div class="nav">
@@ -57,15 +76,18 @@ integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4
             <div class="form-content">
                 <h1>Get started today</h1>
                 <p>We offer instant cash loans.</p>
-                <div class="form">
+                
+                <form action="insert.php" class="form">
                 <label for="e-mail">Email</label><br>
                 <input id="e-mail" type="text" placeholder="x@gmail.com"><br>
                 <label for="password">Password</label><br>
                 <input id="password" type="password" placeholder="password"><br>
                 <p>Forgot Password? <a href="#">Click here</a></p>
                 <p><a href="login.html">Sign up</a> instead</p>
-                <li><a href="#">Log in</a></li>
-                </div>
+                <input type="submit" id="submit" value="Log in">
+                </form>
+                
+                
             </div>
         </div>
 
