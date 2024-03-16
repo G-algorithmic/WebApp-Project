@@ -1,18 +1,19 @@
 <?php
 
-if(isset($_POST['submit'])){
+$servername = "localhost";
+$username = "root";
+$password = "!InaccurateAngel15";
+$database = "webapp";
 
-    $servername = "localhost";
-    $username = "root";
-    $password = "!InaccurateAngel15";
-    $database = "webapp";
-
-    $conn =  new mysqli($servername, $username, $password, $database);
+$conn =  new mysqli($servername, $username, $password, $database);
 
 // Check the connection
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
+
+if(isset($_POST['submit'])){
+
 
     $account_number = mt_rand(100000000000, 999999999999);
     
