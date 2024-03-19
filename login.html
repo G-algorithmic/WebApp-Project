@@ -44,6 +44,7 @@ integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4
 </head>
 <body>
 
+
     
 
         <!-- navigation -->
@@ -70,31 +71,32 @@ integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4
             <div class="loginForm">
                 <div class="loginContent">
                 <h1>Create an account</h1>
-                <form id="account_creation" action="insert.php" method="post">
-                    <label for="fullName">Full Name</label><br>
-                    <input id="fullName" type="text" placeholder="Enter name" required>
+            
+                    <form action="login.php" method="post">
+                        <label for="fullName">Full Name:</label><br>
+                        <input type="text" id="fullName" name="fullName" required><br><br>
+                
+                        <label for="email">Email:</label><br>
+                        <input type="email" id="email" name="email" required><br><br>
+                
+                        <label for="idNumber">ID/Passport Number:</label><br>
+                        <input type="text" id="idNumber" name="idNumber" required><br><br>
+                
+                        <label for="mobile">Mobile Number:</label><br>
+                        <input type="tel" id="mobile" name="mobile" required><br><br>
+                
+                        <label for="password">Password:</label><br>
+                        <input type="password" id="password" name="password" required><br><br>
+                
+                        <label for="confirmPassword">Confirm Password:</label><br>
+                        <input type="password" id="confirmPassword" name="confirmPassword" required><br><br>
 
-                    <label for="email">Email</label><br>
-                    <input id="email" type="text" placeholder="x@gmail.com" required>
+                        <p>By clicking submit you agree to our <a href="#">Terms and conditions</a>.</p><br>
+                
+                        <input type="submit" value="Submit" id="submit">
+                    </form>
 
-                    <label for="passportNo">ID/Passport number</label><br>
-                    <input id="passportNo" type="text" placeholder="12345678" required>
-
-                    <label for="mobile">Mobile number</label><br>
-                    <input id="mobile" type="text" placeholder="+254700000000" required>
-
-                    <label for="password">Password</label><br>
-                    <input id="password" type="password" placeholder="password" required>
-
-                    <label for="confirmPassword">Confirm password</label><br>
-                    <input type="password" placeholder="password">
-
-                    <p>By clicking submit you agree to our <a href="#">Terms and conditions</a>.</p><br>
-
-                    <input type="submit" id="submit">
-                    
-                </form>
-            </div>
+                </div>
             </div>
 
         </div>

@@ -1063,10 +1063,10 @@ body{
     font-family: "PT Sans", sans-serif;
     font-style: italic;
 }
-.loginContent li{
+.loginContent input #submit {
     border: 1px solid white;
     padding: 10px;
-    margin-top: 10px;
+    margin-top: 0;
     width: 101%;
     list-style: none;
     text-align: center;
@@ -1108,10 +1108,43 @@ body{
 
 /* message->php */
 .message {
+    margin-top: 70px;
+    width: 700px;
+    height: 30vh;
     text-align: center;
-    background: #f9eded;
+    background: rgb(211, 236, 211);
     padding: 15px 0;
     border-radius: 5px;
-    margin-bottom: 10px;
     color: red;
+    
+}
+.message-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    
+    
+}
+.message p {
+    height: 30px;
+    margin-bottom: 50px;
+    padding: 5px 10px;
+    border: 1px solid rgb(211, 236, 211); 
+    border-radius: 5px;
+    background: rgb(211, 236, 211);
+    width: 80%;
+    margin-left: 60px;
+    
+
+}
+.message a {
+    border: 1px solid rgb(211, 236, 211);
+    border-radius: 8px;
+    outline: none !important;
+    padding: 15px;
+    margin-left: 60%;
+    background-image: linear-gradient(to right, #2c97f5 0%, #00f2fe 100%);
+    color: white;
+    font-family: "PT Sans", sans-serif;
 }
