@@ -44,6 +44,7 @@ if ($conn->connect_error) {
 
 // Prepare SQL statement to insert data into database
 $email = $_SESSION['email']; // Assuming email is used as a unique identifier
+<<<<<<< HEAD
 $sql = "SELECT * FROM users WHERE email = '$email'";
 $result = $conn->query($sql);
 
@@ -67,11 +68,17 @@ if ($result->num_rows > 0) {
 // Insert transaction data into 'transactions' table
 $sql = "INSERT INTO transactions (transaction_id, amount, email, payment_method) 
 VALUES ('$transaction_id', '$amount', '$email', '$payment_method')";
+=======
+$sql = "INSERT INTO transactions (transaction_id, amount, email, payment_method) VALUES ('$transaction_id', '$amount', '$email', '$payment_method')";
+>>>>>>> ce4ad85f193e09e34ca19083e9e4bafebbedd2a3
 
 // Execute SQL statement
 if ($conn->query($sql) === TRUE) {
     echo "Amount added successfully. Transaction ID: $transaction_id";
+<<<<<<< HEAD
     // Redirect to homepage after successful transaction
+=======
+>>>>>>> ce4ad85f193e09e34ca19083e9e4bafebbedd2a3
     header("Location: homepage.html");
 } else {
     echo "Error: " . $sql . "<br>" . $conn->error;
@@ -80,5 +87,8 @@ if ($conn->query($sql) === TRUE) {
 // Close connection
 $conn->close();
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> ce4ad85f193e09e34ca19083e9e4bafebbedd2a3
