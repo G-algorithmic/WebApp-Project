@@ -14,11 +14,8 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-<<<<<<< HEAD
+
 /* Function to generate a random 12-digit number for account number*/
-=======
-// Function to generate a random 12-digit number for account number
->>>>>>> ce4ad85f193e09e34ca19083e9e4bafebbedd2a3
 function generateRandomNumber() {
     return mt_rand(100000000000, 999999999999);
 }
